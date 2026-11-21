@@ -1,0 +1,17 @@
+[package]
+name = "ponko_pulse"
+version = "0.1.0"
+edition.workspace = true
+description = "A plugin for the Ponko game engine"
+license.workspace = true
+repository.workspace = true
+keywords = ["ponko", "gamedev", "plugin"]
+categories = ["game-development"]
+
+[dependencies]
+# The engine without its default features: a plugin never turns on a
+# window, sound or a GPU for the games that use it. Name only the features
+# your code needs (`features = ["3d"]`, ...); the game picks the rest.
+# Naming and versioning: https://ponko.dev/guide/plugins.html
+ponko = { workspace = true }
+serde = { workspace = true }
