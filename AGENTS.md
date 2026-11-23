@@ -1,7 +1,7 @@
 # Agent instructions
 
 This repository holds plugin crates for the Ponko game engine
-(<https://gitlab.com/ponkoengine/ponko>), one per folder in `crates/`.
+(<https://github.com/ponkoengine/ponko>), one per folder in `crates/`.
 Each crate has its own `AGENTS.md` from the engine's plugin template; read it
 before changing that crate.
 

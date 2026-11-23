@@ -7,7 +7,7 @@ resolver = "3"
 [workspace.package]
 edition = "2024"
 license = "MIT OR Apache-2.0"
-repository = "https://gitlab.com/ponkoengine/ponko-extras"
+repository = "https://github.com/ponkoengine/ponko-extras"
 
 [workspace.dependencies]
 # The engine without its default features: a plugin never turns on a

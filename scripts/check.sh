@@ -8,7 +8,7 @@ set -euo pipefail
 cd "$(dirname "$0")/.."
 
 if [ ! -f ../ponko/Cargo.toml ]; then
-  echo "error: no engine checkout at ../ponko; clone https://gitlab.com/ponkoengine/ponko beside this repository" >&2
+  echo "error: no engine checkout at ../ponko; clone https://github.com/ponkoengine/ponko beside this repository" >&2
   exit 2
 fi
 

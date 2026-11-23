@@ -1,6 +1,6 @@
 # Ponko extras
 
-Plugins for the [Ponko](https://gitlab.com/ponkoengine/ponko) game engine
+Plugins for the [Ponko](https://github.com/ponkoengine/ponko) game engine
 that the project maintains outside the engine. Each one is a crate in
 `crates/`, made from the engine's plugin template, and follows the guide's
 [Plugins for other crates](https://ponko.dev/guide/plugins.html): the names,
@@ -22,7 +22,7 @@ the versions and the tests.
 
    Without the `ponko` command line tool, the same template works with
    cargo-generate:
-   `cargo generate --git https://gitlab.com/ponkoengine/ponko crates/ponko_cli/templates/plugin --destination crates --name ponko_weather`.
+   `cargo generate --git https://github.com/ponkoengine/ponko crates/ponko_cli/templates/plugin --destination crates --name ponko_weather`.
 
 2. Make it a member of this workspace, as `crates/ponko_pulse/Cargo.toml`
    shows: `edition`, `license` and `repository` with `.workspace = true`,
@@ -49,7 +49,7 @@ The crates build against an engine checkout beside this repository,
 `../ponko` (a symbolic link works), on the engine's `main` branch:
 
 ```sh
-git clone https://gitlab.com/ponkoengine/ponko ../ponko   # once
+git clone https://github.com/ponkoengine/ponko ../ponko   # once
 scripts/check.sh
 ```
 
