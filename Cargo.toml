@@ -15,8 +15,9 @@ repository = "https://github.com/ponkoengine/ponko-extras"
 # engine feature names it in its own manifest:
 #   ponko = { workspace = true, features = ["3d"] }
 # The engine is a checkout beside this one (`../ponko`, on its main branch)
-# until it is on crates.io; then this becomes `version = "0.1"`, and a new
-# engine minor is a new minor of every crate here.
+# until the first crate here is published; then this becomes a Ponko minor
+# (`version = "0.2"`), and a new engine minor is a new minor of every crate
+# here.
 ponko = { path = "../ponko", default-features = false }
 serde = { version = "1", features = ["derive"] }
 
