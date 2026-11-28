@@ -10,6 +10,17 @@ the versions and the tests.
 |---|---|---|
 | [`ponko_pulse`](crates/ponko_pulse) | The template's own plugin, kept as the reference every check builds: a `Pulse` component, its system, a debug toggle and a control method | main |
 
+## Status
+
+- There is one crate, `ponko_pulse`. It is the plugin the engine's template
+  makes, kept here so that the checks have something to build. A game has
+  no use for it.
+- Nothing here is published on crates.io yet.
+- The crates build against the engine's `main` branch, not a released
+  version (see [Versions](#versions)).
+- Want a plugin to live here, or to write one? Say so in the engine's
+  [Discussions](https://github.com/ponkoengine/ponko/discussions) first.
+
 ## Adding a plugin
 
 1. Make the crate from the engine's template, in `crates/`, named
@@ -41,7 +52,7 @@ the versions and the tests.
    table (this crate's version to the Ponko versions it works with). Add
    its row to the table above.
 
-5. Check it (below), then open a merge request.
+5. Check it (below), then open a pull request.
 
 ## Checking
 
@@ -62,14 +73,14 @@ builds against `../ponko` on that change's branch.
 
 ## Versions
 
-Until the engine is on crates.io, every crate builds against the engine
-checkout beside this one, on its `main` branch (the root `Cargo.toml`).
-After that:
+Every crate builds against the engine checkout beside this one, on its
+`main` branch (the root `Cargo.toml`), because nothing here is published
+yet. From the first published crate on:
 
 - Each crate follows semver on its own. A breaking change is a new minor
   version before 1.0 (0.1 to 0.2), a new major one after.
-- The workspace depends on a Ponko minor (`version = "0.1"`), never an exact
-  patch. A new Ponko minor is a new minor (or major) release of every crate
+- The workspace depends on a Ponko minor (for example `version = "0.2"`),
+  never an exact patch. A new Ponko minor is a new minor (or major) release of every crate
   here, because their APIs carry Ponko's types; the old line keeps getting
   fixes while games move.
 - Each crate's README says which of its versions go with which Ponko
